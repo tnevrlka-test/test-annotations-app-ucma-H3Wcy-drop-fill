@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-thac
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-qinj-tenant/test-annotations-app-ucma/test-annotations-thac@sha256:046944808a9b595373b419f7652e1053740f73f0c77e81949f09e97ba446ebf3
+        name: my-nginx
+        resources: {}
+status: {}
